@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; /* for box-model */
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+    
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+
+.navbar__brand{
+    width:100px;
+}
+
+.navbar__logo{
+    width:100%;
+}
+
+.nav__item{
+    background-image:linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+
+    color:#fff;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer; /*the arrow changes to hand pointer*/
+    transition:0.5s; /* this is for hover pseudo class with background-position as right center which is not working....*/
+}
+
+.nav__item:hover {
+    background-position:right center; /* change the direction of the change here & THIS PROPERTY IS NOT WORKING...*/
+    border:3px solid pink;
+}
+
+@media (min-width:768px) {
+    .navbar{
+        justify-content: space-between;
+        padding:10px 30px;
+    }
+}
+
+@media (min-width:1020px) {
+    .navbar__brand{
+        width:150px;
+    }
+    .navbar__logo{
+        width:100%;
+    }
+    .nav__item{
+        padding:15px;
+        font-size:15px;
+    }
+}
