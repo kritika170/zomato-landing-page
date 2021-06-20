@@ -24,7 +24,7 @@
     </header>
 
     <!--main is also a semantic tag-->
-    <!--Hero Container-->
+    <!--Hero Content-->
     <main class="container">
         <section class="hero__container">
             <div class="hero__image__container">
@@ -43,9 +43,55 @@
             </div>
         </section>
 
-        <!--Explore Menu Container-->
-        <section>
-            
+        <!--Explore Menu-->
+        <section class="explore__menu__container">
+            <h1 class="explore__menu__text">Explore Our Menu</h1>
+            <div class="explore__menu__gradient__bg"></div>
+            <div class="explore__menu__lists">
+                <!--Burger-->
+                <div class="food__card__container">
+                    <div class="food__card__image">
+                        <img src="assets/burger.jpg"  alt="Burger" class="food__image"/>
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Burgers</h3>
+                        <p>Burger King, McDonalds, Burger Place, 
+                            <span style="color:red;">+3</span>
+                        </p>
+                    </div>
+                </div>
+                <!--Pizza-->
+                <div class="food__card__container" id="pizza-card">
+                    <div class="food__card__image">
+                        <img src="assets/pizza.jpg"  alt="Pizza" class="food__image"/>
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Pizza</h3>
+                        <p> Pizza Hut, Domino's Pizza, 
+                            <span style="color:red;">+3</span>
+                        </p>
+                    </div>
+                </div>
+                <!--Ice Cream-->
+                <div class="food__card__container">
+                    <div class="food__card__image">
+                        <img src="assets/iceCream.jpg"  alt="Ice Cream" class="food__image"/>
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Ice Creams</h3>
+                        <p> Baskin Robbins, Ibaco, 
+                            <span style="color:red;">+3</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Explore menu Button-->
+            <div class="explore__menu__button">
+                <button class="button__primary">
+                    View More
+                </button>
+            </div>
         </section>
     </main> 
 </body>
